@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="{% static 'web.css' %}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+</head>
+<body>
+    <div id="nav">
+        
+        
+        <nav>
+            
+        
+            <h1>BUGTREAT TECHNOLOGIES</h1>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                
+            </ul>
+            <BUtton class="but" action="new()">NEXT PAGE</BUtton>
+            
+        </nav>
+        {% block content %}
+        
+        <div class="container">
+            <div class="img"><img src="{% static '02.jpeg' %}" alt=""><p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis perferendis, eos ut veritatis nam neque explicabo sequi repellendus cum reiciendis!</p></div>
+            <div class="img"><img src="{% static '03.jpeg' %}" alt=""><p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis perferendis, eos ut veritatis nam neque explicabo sequi repellendus cum reiciendis!</p></div>
+            <div class="img"><img src="{% static '04.jpeg' %}" alt=""><p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis perferendis, eos ut veritatis nam neque explicabo sequi repellendus cum reiciendis!</p></div>
+            <div class="img"><img src="{% static '01.jpg' %}" alt=""><p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis perferendis, eos ut veritatis nam neque explicabo sequi repellendus cum reiciendis!</p></div>
+    
+        </div>
+        <div class="form" >
+        <form action="" method="POST">
+        {% csrf_token %}
+            <label for="name"><h2>NAME</h2></label>
+            <input type="text" placeholder="Enter name" name="name">
+            <label for=""><h2>ADDRESS</h2></label>
+            <input type="address" placeholder="Enter add" name="adress">
+            <label for="name"><h2>GMAIL</h2></label>
+            <input type="mail" placeholder="Enter gmail" name="gmail">
+            <label for="name"><h2>PHONE</h2></label>
+            <input type="number" placeholder="Enter phone no" name="phone">
+            <div>
+                <button class="log">SUBMIT</button>
+            </div>
+            <a href="data/">Summa</a>
+
+        </form>
+
+    </div>
+    <div class="paw"> 
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi expedita reprehenderit consequuntur veritatis necessitatibus omnis hic. Dolorum praesentium porro qui ut molestiae distinctio veritatis aliquam non ullam minima. Omnis ab animi reiciendis ipsum nesciunt nihil qui aliquid earum possimus voluptas, totam libero minus non inventore ad deserunt alias quo maiores?
+        </p>
+        
+        
+    </div>
+    <div><button class="nex" onclick="clr_change()">NEXT PAGE</button></div>
+    <table class="table">
+        <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+        </tr>
+        <tr>
+            <td>karthi</td>
+            <td>34</td>
+            <td>B++</td>
+        </tr>
+        <tr>
+            <td>prathi</td>
+            <td>22</td>
+            <td>A+</td>
+        </tr>
+        <tr>
+            <td>murugan</td>
+            <td>18</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>guna</td>
+            <td>27</td>
+            <td>C++</td>
+        </tr>
+    </table>
+       
+    </div>
+    {% endblock %}
+    <script>
+        
+        function clr_change(){
+            var clr=document.getElementsByClassName("nex");
+            var color=['red','orange','teal'];
+            var random=Math.floor(Math.random()*color.length);
+            clr.style.backgroundcolor=color[random];
+        }
+    </script>
+    
+  
+</body>
+</html>

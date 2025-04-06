@@ -1,0 +1,136 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: skyblue;
+    
+    
+}
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+#nav{
+    height: 70px;
+    width: auto;
+    background-color:rgb(5, 0, 0) ;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    text-align: center;
+    
+}
+ul,li{
+    display: flex;
+    padding-right: 15px;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    
+
+    
+}
+h1{
+    color: orangered;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    margin-top: 100px;
+
+}
+.img{
+    background-color: black;
+    color: white;
+    height: 300px;
+}
+
+li :hover{
+    background-color: orange;
+    border: orange 5px solid;
+    border-radius: 10px;
+}
+.form{
+    background-image: url(./nature.jpg);
+    
+    width: 300px;
+    color: white;
+    border-radius: 20px;
+    margin-left: 350px;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+.but{
+    background-color: rgb(0, 183, 255);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.but button :hover{
+    background-color: white;
+}
+.log{
+    background-color: green;
+    color: bisque;
+    font-weight: bolder;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+input{
+    width: 300px;
+    
+}
+.paw{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-weight: bolder;
+    width: 980px;
+    height: 100px;
+    margin-left: 40px;
+    border-radius: 10px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+.nex{
+    background-color: blue;
+    font-size: 20px;
+    color: beige;
+    border-radius: 100px;
+    height: 130px;
+    margin-top: 5px;
+}
+.p{
+    margin-top: 5px;
+    padding: 10px;}
+.table ,th,td,tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: cadetblue;
+    padding: 15px;
+    margin-left: 300px;
+    width: 500px;
+    margin-top: 30px;
+}
