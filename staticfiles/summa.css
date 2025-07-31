@@ -1,0 +1,17 @@
+.mass{
+    width: 100%;
+    height: 300px;
+    
+}
+img{
+    height: 100%;
+    width: 60%;
+    border-radius: 30px;
+    box-shadow: inset black 20px;
+}
+.lore{
+    margin-top: 50px;
+}
+p{
+    color: orange;
+}

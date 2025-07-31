@@ -1,0 +1,20 @@
+
+
+.container{
+    margin: 20px 0;
+    background-color: rgb(44, 46, 48);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    
+}
+
+.container i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block;
+}
+.container div{
+    margin-top: 70px;
+    
+}
