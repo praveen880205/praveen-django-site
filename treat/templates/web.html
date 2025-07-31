@@ -4,33 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet"href="{% static 'web.css' %}">
+    <title>BUGTREAT SITE</title>
+    <link rel="stylesheet" href="{% static 'web.css' %}">
+    {% block extra_css %}{% endblock %}
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         </style>
+        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
+    <div class="world"><video autoplay muted loop id="video"><source src="{% static 'world.mp4' %}"></video>
     <div id="nav">
-        
+        <div class="mox">
         
         <nav>
-            
-        
-            <h1>BUGTREAT TECHNOLOGIES</h1>
+            <h1>TECHNOLOGIES</h1>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="" class="home"> <i class="fa-solid fa-house"> </i></i>HOME</a></li>
+                <li class="botton"><a href=""><i class="fa-solid fa-face-smile"></i>ABOUT</a></li>
+                <li><a href="contact/" class="mur"><i class="fa-solid fa-phone"></i>CONTACT</a></li>
                 
             </ul>
-            <BUtton class="but" action="new()">NEXT PAGE</BUtton>
+           
+            <a href="data/" class="but">NEXT PAGE</a>
+           
             
         </nav>
+        </div>
+        
+        <div class="top"><h1>WELCOME TO OUR SITE</h1></div>
+        <div class="mm"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, sed. Delectus in maxime dolorem dolores quos consequatur, voluptate laudantium officia asperiores nisi. Eum cumque error sunt sed, placeat at sit odio voluptas consectetur neque et excepturi quasi optio distinctio nam alias! Beatae tempora in amet et obcaecati? Veritatis, a exercitationem.</p></div>
         {% block content %}
         
         <div class="container">
-            <div class="img"><img src="{% static '02.jpeg' %}" alt=""><p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis perferendis, eos ut veritatis nam neque explicabo sequi repellendus cum reiciendis!</p></div>
+            <div class="img"><img src="{% static '02.jpg' %}" alt=""><p class="p">Lorem ipsum, dolor sit amet ejhfvweub jedhvuyweuvdwe weegvudvuewubuyew ewjhbueuwbuyuew whevduweconsectetur adipisicing elit. Officiis perferendis, eos ut cum reiciendis!</p></div>
             <div class="img"><img src="{% static '03.jpeg' %}" alt=""><p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis perferendis, eos ut veritatis nam neque explicabo sequi repellendus cum reiciendis!</p></div>
             <div class="img"><img src="{% static '04.jpeg' %}" alt=""><p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis perferendis, eos ut veritatis nam neque explicabo sequi repellendus cum reiciendis!</p></div>
             <div class="img"><img src="{% static '01.jpg' %}" alt=""><p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis perferendis, eos ut veritatis nam neque explicabo sequi repellendus cum reiciendis!</p></div>
@@ -42,7 +51,7 @@
             <label for="name"><h2>NAME</h2></label>
             <input type="text" placeholder="Enter name" name="name">
             <label for=""><h2>ADDRESS</h2></label>
-            <input type="address" placeholder="Enter add" name="adress">
+            <input type="address" placeholder="Enter add" name="adress" required>
             <label for="name"><h2>GMAIL</h2></label>
             <input type="mail" placeholder="Enter gmail" name="gmail">
             <label for="name"><h2>PHONE</h2></label>
@@ -50,9 +59,17 @@
             <div>
                 <button class="log">SUBMIT</button>
             </div>
-            <a href="data/">Summa</a>
+            
 
         </form>
+        
+
+    </div>
+    <div class="container">
+        <div class="img"><img src="{% static '07.jpg' %}" alt=""><p class="p">Lorem ipsum, dolor sit amet ejhfvweub jedhvuyweuvdwe weegvudvuewubuyew ewjhbueuwbuyuew whevduweconsectetur adipisicing elit. Officiis perferendis, eos ut cum reiciendis!</p></div>
+        <div class="img"><img src="{% static '08.jpeg' %}" alt=""><p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis perferendis, eos ut veritatis nam neque explicabo sequi repellendus cum reiciendis!</p></div>
+        <div class="img"><img src="{% static '09.jpg' %}" alt=""><p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis perferendis, eos ut veritatis nam neque explicabo sequi repellendus cum reiciendis!</p></div>
+        <div class="img"><img src="{% static '10.jpg' %}" alt=""><p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis perferendis, eos ut veritatis nam neque explicabo sequi repellendus cum reiciendis!</p></div>
 
     </div>
     <div class="paw"> 
@@ -61,7 +78,7 @@
         
         
     </div>
-    <div><button class="nex" onclick="clr_change()">NEXT PAGE</button></div>
+    
     <table class="table">
         <tr>
         <th>Name</th>
@@ -89,17 +106,51 @@
             <td>C++</td>
         </tr>
     </table>
-       
+    <footer class="foot">
+        
+        <div class="tt"><h4>CONTACT US ON</h4></div>
+        <div class="in"></div>
+        <h5>Adress:kalankarai</h5>
+        <h5>city:madurai</h5>
+        <h5>Gmail:pravinps31102002@gmail.com</h5>
+    
+    </footer>
+    <div class="about">
+        <h3>
+            ABOUT PAGE
+        </h3>
+        <video class="vio" autoplay muted loop><source src="{% static '123.mp4' %}"></video>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore consectetur impedit explicabo quas unde odio fugit laudantium quisquam eaque, voluptatibus molestiae alias expedita quod? Corporis quod earum tempore impedit pariatur veniam repellat, alias quam reprehenderit asperiores soluta magni incidunt itaque fugit at molestiae. Soluta enim autem adipisci, odit sapiente ipsam?</div>
     </div>
+    </div>
+    
     {% endblock %}
     <script>
+        var button=document.querySelector('.botton');
+        var box=document.querySelector('.about');
         
-        function clr_change(){
-            var clr=document.getElementsByClassName("nex");
-            var color=['red','orange','teal'];
-            var random=Math.floor(Math.random()*color.length);
-            clr.style.backgroundcolor=color[random];
-        }
+        button.addEventListener('mouseover',()=>{
+            box.style.display='block';
+        });
+        button.addEventListener('mouseout',()=>{
+            box.style.display='none';
+        });
+        document.querySelector('.mur').addEventListener("click",function(event){
+            event.preventDefault();
+            window.location.href="/contact/"
+            
+        });
+        document.querySelector('.home').addEventListener("click",function(event){
+            event.preventDefault();
+            window.location.href="/"
+        });
+        document.querySelector('.but').addEventListener("click",function(event){
+            event.preventDefault();
+            window.location.href="/data/"
+        });
+        
+
+        
     </script>
     
   

@@ -1,0 +1,38 @@
+{% extends "web.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'contact.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div>
+        <i class="fa-solid fa-phone"></i>
+        <h1>PHONE</h1>
+        <h3>7824935400</h3>
+    </div>
+
+    <div>
+        <i class="fa-solid fa-location-dot"></i>
+        <h1>LOCATION</h1>
+        <h3>Madurai</h3>
+    </div>
+
+    <div>
+        <i class="fa-solid fa-message"></i>
+        <h1>EMAIL</h1>
+        <h3>example@gmail.com</h3>
+    </div>
+    
+</div>
+<footer class="foot">
+        
+    <div class="tt"><h4>THIS IS OUR TECH PAGE</h4></div>
+    <div class="in"></div>
+    <h5>Adress:kalankarai</h5>
+    <h5>city:madurai</h5>
+    <h5>Gmail:pravinps31102002@gmail.com</h5>
+</div>
+</footer>
+{% endblock %}

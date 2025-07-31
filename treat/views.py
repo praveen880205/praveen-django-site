@@ -6,13 +6,18 @@ from .models import Datas
 def new(request):
     if request.method=='POST':
         names=request.POST.get('name')
-        adresss=request.POST.get('address')
+        adresss=request.POST.get('adress')
         gmails=request.POST.get('gmail')
         phones=request.POST.get('phone')
         a=Datas(NAME=names,Address=adresss,Gmail=gmails,Phone=phones)
         a.save()
-        return redirect('data/')
+        return redirect('/data/')
     
     return render(request,'web.html')
 def summa(request):
-    return render(request,'summa.html')
+    b=Datas.objects.all()
+    return render(request,'summa.html',{'b':b})
+
+def contact(request):
+    return render(request,'contact.html')
+    
